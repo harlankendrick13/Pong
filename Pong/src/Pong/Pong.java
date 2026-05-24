@@ -1,6 +1,8 @@
 package Pong;
 
+import java.awt.Color;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 
 public class Pong extends JFrame {
 
@@ -15,11 +17,19 @@ public class Pong extends JFrame {
 		setTitle(WINDOW_TITLE);
 		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		setResizable(false);
-		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		add(new PongPanel(Color.BLACK));
+		
+		setVisible(true);
 	}
 		
 	public static void main(String[] args) {
-		new Pong();
+		
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new Pong();
+			}
+		});
 	}
 }
