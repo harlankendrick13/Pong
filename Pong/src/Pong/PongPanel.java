@@ -9,11 +9,14 @@ import javax.swing.JPanel;
 
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	
+
 	// -----------------------------------
 	// Colour Constructor
 	// -----------------------------------
-	public PongPanel(Color backgroundColour) {
-		setBackground(backgroundColour);
+	private static final Color BACKGROUND_COLOUR = Color.BLACK;
+
+	public PongPanel() {
+		setBackground(BACKGROUND_COLOUR);
 	}
 	
 	@Override
