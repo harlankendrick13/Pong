@@ -19,7 +19,7 @@ public class Pong extends JFrame {
 		setResizable(false);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		add(new PongPanel(Color.BLACK));
+		add(new PongPanel());
 		
 		setVisible(true);
 	}
