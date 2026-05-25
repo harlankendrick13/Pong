@@ -19,7 +19,7 @@ public class Sprite {
 	private int width;
 	private int height;
 
-	// Colour
+	// Color
 	private Color colour;
 	
     // -------------------------
@@ -103,7 +103,7 @@ public class Sprite {
 	
 	// overloaded setters with bounds checking
 	
-	public void seXPosition(int newX, int panelWidth) {
+	public void setXPosition(int newX, int panelWidth) {
 		xPosition = newX;
 		
 		// Left bound
